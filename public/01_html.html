@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sm img{
+            width: 80px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <img src="./image/anime-img/02.jpg" alt="2">
+    </div>
+    <div class="sm">
+        <img data-target="./image/anime-img/02.jpg" src="./image/anime-img/02.jpg" alt="2">
+        <img data-target="./image/anime-img/03.jpg" src="./image/anime-img/03.jpg" alt="3">
+        <img data-target="./image/anime-img/04.jpg" src="./image/anime-img/04.jpg" alt="4">
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        function show(){
+            var $img=$("div.big>img")
+            var i=parseInt($img.attr("alt"))
+            if(i<4){
+                i++
+            }else{
+                i=2
+            }
+            $img.attr({src:`./image/anime-img/0${i}.jpg`,alt:i})
+           //$("div.sm>img").attr({alt:i}).css("boreder","border: 2px solid #f25d8e;").siblings().css("border","none")
+            
+        }
+        var n=setInterval(show,1000)
+        $("div.sm>img").mouseleave(function(){
+            n=setInterval(show,1000)
+            var $simg=$(this)
+            
+        })
+        $("div.sm>img").mouseenter(function(){
+            clearInterval(n)
+            var $img=$(this)
+            var src=$img.attr("data-target")
+            $("div.big>img").attr("src",src)
+            $img.css("border","2px solid #f25d8e").siblings().css("border","none")
+        })
+    </script>
+</body>
+</html>

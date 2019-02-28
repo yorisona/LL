@@ -1,0 +1,296 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> 琉璃社区★请注册 </title>
+		<meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+		<meta charset="utf-8"/>
+		<style type="text/css">
+		</style>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/register.css">
+		<script src="./js/img_ver.js"></script>
+		<script>
+			function register(){
+				if(event.keyCode==13){
+					document.getElementById('register').click();
+				}
+			}
+		</script>
+		
+    </head>
+	
+<body onkeydown="register()">
+	<header id="header" class="header">
+			<!--最上层-->
+		<div class="header-top">
+			<!--logo-->
+			<div id="toptop" class="toptop">
+				<a href="http://127.0.0.1:3000/index.html" class="">
+					<img class="toplogo" src="./image/琉璃社区.png" alt="">
+				</a>
+				<!--登录注册-->
+				<div class="topuser">
+					<span></span>
+                    <a href="http://127.0.0.1:3000/login.html">登录/</a>
+                    <a href="http://127.0.0.1:3000/register.html">注册</a>
+				</div>
+				<div class="topxz">
+					<a href="#">
+						<span>下载客户端</span>
+					</a>
+				</div>
+				<!--游戏中心-->
+				<div class="gameIcon">
+					<a href="#">
+						<span>游戏中心</span>
+					</a>
+				</div>
+				<div class="rim">
+					<a href="#">
+						<span>周边商城</span>
+					</a>
+				</div>
+				<div class="credit card">
+					<a href="#">
+						<span id="credit-card">信用卡</span>
+					</a>
+				</div>
+				<div class="toptext">
+					<form action="">
+						<input type="text" placeholder="琉璃社区★分享动漫快乐">
+						<a href="#"><img id="topsousuo" src="./image/搜索.png" alt="" ></a>
+					</form>
+				</div>               
+				<i class="clr"></i>
+			</div>                      
+		</div>
+	</header>
+	<section  class="main">
+			<div id="modal-overlay" style="visibility: hidden;">
+				<div class="modal-data">
+					<p  class="close_btn"><a onclick="overlay()">X</a></p>
+					<div class="verBox">
+						<div id="imgVer" style="display:inline-block;"></div>
+					</div>
+				</div>
+			</div>
+			<div  class="bgcover">
+				<div class="login">
+					<h3 id="loginheader">
+						<div class="before">
+							<span>账号注册</span>
+						</div>						
+					</h3>
+					<div class="login-cont">
+						<div class="login-top"></div>
+						<div class="login-user">
+							<div class="login-uname">
+								<span><img src="./image/login-uname.png" alt=""></span>
+                                <input  type="text" id="uname" name="uname" onblur="checkUname()" placeholder="请输入手机号/邮箱">
+                                <span id="unameMsg"></span>
+								<i class="clr"></i>
+							</div>
+							<div class="login-upwd">
+								<span><img src="./image/login-upwd.png" alt=""></span>
+								<input type="password" placeholder="请输入密码" id="upwd" >
+								<i class="clr"></i>
+                            </div>
+                            <div class="login-upwd">
+								<span><img src="./image/login-upwd.png" alt=""></span>
+                                <input type="password" placeholder="请再次输入密码" id="upwd2" onblur="checkUpwd()" >
+                                <span id="upwdMsg"></span>
+								<i class="clr"></i>
+                            </div>
+                            <div class="login-upwd">
+								<span><img src="./image/邮箱.png" alt=""></span>
+								<input type="password" placeholder="请输入邮箱" id="email" >
+								<i class="clr"></i>
+							</div>
+							<!-- 验证 -->
+							<div id="embed-captcha" style="display: none"></div>
+							<a class="btn_act_sjyzm phone_reg" id="phonebtn" href="javascript:;" onclick="overlay()">点击进行验证</a>
+
+							<div class="login-button">
+								<input type="button" id="register" value="注册" onclick="zhuce()" >
+								<h4 id="d0"></h4>
+							</div>
+						</div>
+						<div class="login-botton">
+							<div class="login-bottonbox">
+								<a href="#" class="login-bottonhelp">帮助手册</a>
+								<a href="#" class="login-bottonone">忘记密码</a>
+								<a href="#" class="login-bottontwo">立即注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<footer>
+		<div class="foot">
+			<div class="footmain">
+				<div class="foot-nav"> 
+					<div class="foot-nav-top">
+						<!--为空块-->
+					</div>
+					<div class="foot-nav-top">
+						<h4>官方</h4>
+						<a href="#">游戏中心</a>
+						<a href="#">新浪微博</a>
+						<a href="#">官方网店</a>
+						<a href="#">周边商城</a>
+					</div>
+					<div class="foot-nav-top">
+						<h4>合作</h4>
+						<a href="#">关于我们</a>
+						<a href="#">联系我们</a>
+						<a href="#">ac招聘</a>
+					</div>
+					<div class="foot-nav-top">
+						<h4>反馈</h4>
+						<a href="#">帮助中心</a>
+						<a href="#">用户反馈</a>
+						<a href="#">用户协议</a>
+						<a href="#">隐私政策</a>
+					</div>
+					<div class="foot-nav-top">
+						<img src="./image/loginbeijing.jpg" alt="">
+					</div>
+					<i class="clr"></i>
+				</div>
+				<div class="foot-main">
+					<div class="foot-section">
+						<!--为空块-->
+					</div>
+					<div class="foot-section">
+						<a href="#">中国互联网举报中心</a>
+						<a href="#">网络文化经营单位</a>
+						<a href="#">京公网安备 11010502032340号京ICP备15067359号</a>
+						<h4>公司名称: 杭州琉璃科技有限公司</h4>
+					</div>
+					<div class="foot-section">
+						<h4>京ICP备15067359号</h4>
+						<a href="#">北京互联网举报中心</a>
+						<a href="#">北京12318文化市场举报热线</a>
+						<h4>电话: 010-53520014</h4>
+					</div>
+					<div class="foot-section">
+						<a href="#">公安部网络违法犯罪举报网站</a>
+						<a href="#">举报邮箱：report@acfun.cn</a>
+						<h4>节目制作经营许可证（京）字第05158号</h4>
+					</div>
+					<i class="clr"></i>
+				</div>
+				<div class="footfooter">
+					<div>
+						<span>Copyright © 2007-2018 llss. 保留所有权利</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+	<script src="./js/jquery-1.11.3.js"></script>
+	<script>
+		var imgVer_Boolean=false
+	function overlay(){
+		
+			var e1 = document.getElementById('modal-overlay');
+			console.log(e1)
+			e1.style.visibility = (e1.style.visibility == "visible")? "hidden" : "visible";
+		}
+    imgVer({
+            el:'$("#imgVer")',
+            width:'260',
+            height:'116',
+            img:[
+                'images/ver.png',
+                'images/ver-1.png',
+                'images/ver-2.png',
+                'images/ver-3.png'
+            ],
+            success:function () {
+                $(".verBox").css({
+                    "left":"404px",
+                    "opacity":"1"
+                });
+                $("#modal-overlay").css({
+                    "left":"0",
+                    "visibility": "hidden"
+                });
+                imgVer_Boolean=true;
+            },
+            error:function () {
+                //alert('错误什么都不执行')
+                imgVer_Boolean=false;
+            }
+		});
+	//验证用户名
+    var isRegister=''
+		function checkUname(){
+			var xhr=new XMLHttpRequest()
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					var result=xhr.responseText
+					console.log(result)
+					if(result==1){
+						unameMsg.innerHTML=('可以注册')
+						isRegister=true
+					}else if(result==0){
+						unameMsg.innerHTML=('用户名已存在')
+						isRegister=false
+					}else{
+						unameMsg.innerHTML=('不能为空')
+						isRegister=false
+					}					
+				}
+			}
+			xhr.open("get","/user/checkuname?uname="+uname.value,true)
+			xhr.send(null)
+		}
+		//验证两次密码
+		function checkUpwd(){
+			if(upwd.value!==upwd2.value){
+				upwdMsg.innerHTML=("两次输入不一致")
+				isRegister=false
+			}else{
+				upwdMsg.innerHTML=("")
+				isRegister=true
+			}
+		}
+		//注册
+		function zhuce(){
+			if(!isRegister){
+				alert('用户名不能注册')
+				return
+			}
+			if(upwd.value!==upwd2.value){
+				alert('两次密码不一致')
+				d3.innerHTML=('两次密码不一致')
+				return
+			}
+			if(imgVer_Boolean==false){
+				alert("验证未通过")
+				return
+			}
+			var xhr=new XMLHttpRequest()
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					var result=xhr.responseText
+					if(result){
+						alert('注册成功')
+						location.href='http://127.0.0.1:3000/login.html'
+					}
+					d0.innerHTML=result
+				}
+			}
+			xhr.open("post","/user/register",true)
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+			formdata="&uname="+uname.value+"&upwd="+upwd.value+"&email="+email.value
+			xhr.send(formdata)
+		}
+	</script>
+</html>

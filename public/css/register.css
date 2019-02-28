@@ -1,0 +1,557 @@
+body {
+    font-family: "AcFun Symbol","Helvetica Neue",Helvetica,Arial,"pingfang SC","Microsoft Yahei",STHeiti,sans-serif;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    background: #f8f8f8;
+}
+div {
+    display: block;
+}
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+/* 最上层 */
+.header{
+    background: #fff;
+    line-height: 46px;
+    height: 46px;
+}
+.header .header-banner {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    background-color: gray;
+}
+.header .nav {
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #ececec;
+    font-size: 12px;
+    widows: 100%;
+    height: 345px;
+}
+#toptop{
+    width: 1163px;
+    margin: 0 auto;
+}
+.toplogo{
+    vertical-align: top;
+    padding-top: 7px;
+    float: left;
+    width: 120px;
+    height: 35px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.toptop a{
+    text-decoration: none;
+    color: #333;
+    outline: none;   
+}
+.toptop a:hover{
+    color:red ;
+}
+.gameIcon{
+    widows: 60px;
+    height: 10px;
+    float: left;
+    margin-right: 20px;
+}
+.gameIcon span{
+    background: url(../image/game.png)no-repeat;
+    background-size: 18px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.rim{
+    float: left;
+    width: 80px;
+    height: 10px;
+    margin-right: 20px;
+}
+.rim span{
+    background: url(../image/shop.png)no-repeat;
+    background-size: 23px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.credit card{
+    float: left;
+    width: 60px;
+    height: 10px;
+}
+#credit-card{
+    background: url(../image/card.png)no-repeat;
+    background-size: 13px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.toptext{
+    display: block;
+    position: absolute;
+    height: 32px;
+    top: 7px;
+    left: 41%;
+    margin-left: -20px;
+    width: 362px;
+    float: left;
+}
+.toptext input{
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    padding: 8px 10px;
+    height: 32px;
+    line-height: 14px;
+    border-radius: 3px 0 0 3px;
+    width: 315px;
+    vertical-align: top;
+    color: #999;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20px;
+}
+#topsousuo{
+    float: left;
+    widows: 30px;
+    height: 30px;
+    padding-top: 3px;
+    background-color:pink;
+}
+.topuser{
+    float: right;
+    width: 100px;
+    height: 10px;
+}
+.topuser span{
+    background: url(../image/topdeng.png)no-repeat;
+    background-size: 13px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.topxz{
+    float: right;
+    width: 100px;
+    height: 10px;
+    margin-right: 40px;
+}
+.topxz span{
+    background: url(../image/topxz.png)no-repeat;
+    background-size: 13px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.cle{
+    clear: both;
+}
+/* 中间主题图片层 */
+.main{
+    margin-bottom: 0;
+    margin-top: 5px;
+    background: url(../image/bn18.jpg)no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+.bgcover{
+    z-index: 1;
+    width: 1036px;
+    height: 750px;
+    margin: 0 auto;
+    padding-top:240px;
+}
+
+.login{
+    padding: 25px;
+    background: #fff;
+    -khtml-opacity: .95;
+    -moz-opacity: .95;
+    opacity: .94;
+    border-radius: 7px;
+    height: 415px;
+    width: 430px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+.before {
+    content: '';
+    display: block;
+    width: 94.5px;
+    height: 25px;
+    top: 0;
+    left: 30px;
+    background: url(../image/琉璃社区.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 登录框log */
+.before span{
+    margin-left: 100px;
+    display: inline-block;
+    font-size: 15px;
+    width: 60px;
+    height: 30px;
+    margin-top: 5px;
+}
+/* 登录密码框文本框主体 */
+.login-cont{
+    padding-bottom: 275px;
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+.login-top{
+    width: 100%;
+    height: 15px;
+}
+/* 登录 */
+.login-user{
+    width: 100%;
+    height: 175px;
+}
+/* 文本框 */
+.login-uname span img{
+    width: 24px;
+    height: 24px;
+    background: no-repeat center;
+    margin: 8px 8px 0;
+    float: left;
+}
+.login-uname{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: #fff;
+    opacity: .95;
+    margin-top: 0;
+    width: 332px;
+    height: 42px;
+}
+
+.login-uname input{
+    margin-top: 11px;
+    line-height: 20px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    float: left;
+    vertical-align: middle;
+    margin-left: 15px;
+    width: 250px;
+}
+/* 密码框 */
+.login-upwd{
+    width: 332px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: #fff;
+    -khtml-opacity: .95;
+    -moz-opacity: .95;
+    opacity: .95;
+    float: left;
+    margin-left: 25px;
+}
+.login-upwd span img{
+    width: 24px;
+    height: 24px;
+    background: no-repeat center;
+    margin: 8px 8px 0;
+    float: left;
+}
+.login-upwd input{
+    margin-top: 11px;
+    line-height: 20px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff !important;
+    float: left;
+    vertical-align: middle;
+    margin-left: 15px;
+    width: 250px;
+}
+.login-button{
+    width: 332px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: #fff;
+    -khtml-opacity: .95;
+    -moz-opacity: .95;
+    opacity: .95;
+    float: left;
+    margin-left: 25px;
+}
+.login-button input{
+    width: 329px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #fd4c5b;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+/* 登录框底部 */
+.login-botton{
+    width: 100%;
+    height: 40px;
+}
+.login-bottonbox{
+    height: 20px;
+    zoom: 1;
+    display: flex;
+    width: 380px;
+}
+.login-bottonhelp{
+    color: #9b9b9b;
+    width: 61px;
+    margin-right: 188px;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+}
+.login-bottonone,.login-bottontwo{
+    color: #9b9b9b;
+    width: 61px;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+}
+.login-bottonbox a:hover{
+    color: pink;
+}
+/* 最底层 */
+.foot{
+    height: 250px;
+    background: #ececec;
+}
+/* 底部主体 */
+.footmain{
+    width: 1180px;
+    margin: 0 auto;
+    height: 250px;
+}
+/* 底部nav */
+.foot-nav{
+    height: 80px;
+    padding-top: 10px;
+}
+.foot-nav-top{
+    width: 225px;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;   
+}
+.foot-nav-top a{
+    color: #333;
+    margin-right: 24px;
+    display: inline-block;
+    padding: 3px;
+}
+.foot-nav-top img{
+    width: 90px;
+    height: 65px;
+    margin-top: 6px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}
+/* 底部main */
+.foot-main{
+    height: 120px;
+}
+.foot-section{
+    width: 225px;
+    height: 120px;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+}
+.foot-section a, .foot-section h4{
+    color: #999;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 3px;
+}
+/* 底部的底部 */
+.footfooter{
+    height: 50px;
+}
+.footfooter div{
+    margin-left: 485px;
+    padding-top: 15px;
+}
+
+
+#upwdMsg{
+    position: relative;
+    top: 6px;
+    white-space: nowrap;
+}
+
+
+ /* 定义模态对话框外面的覆盖层样式 */
+ #modal-overlay {
+    visibility: hidden;
+    position: absolute;   /* 使用绝对定位或固定定位  */
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    z-index: 1000;
+    background-color: #333;
+    opacity: 0.9;   /* 背景半透明 */
+}
+/* 模态框样式 */
+.modal-data{
+    width:600px;
+    height:400px;
+    margin: 300px auto;
+    background-color: #fff;
+    border:1px solid #000;
+    padding:15px;
+    text-align:center;
+    border-radius: 5%;
+}
+.close_btn{
+    text-align: right;  
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;       
+}
+/*滑块验证*/
+.verBox {
+    width:100%;
+    text-align:center;
+    left:404px;
+    top:0;
+    opacity:1;
+    transition:all 0.8s;
+    padding-top:85px;
+}
+.err {
+    margin:12px 0 0;
+    line-height:12px;
+    height:12px;
+    font-size:12px;
+    color:red;
+}
+
+.box_01hc{
+position:absolute;
+background-color:rgba(255, 255, 255, 0.45)
+}
+
+#phonebtn {
+    width: 241px;
+    height: 33px;
+    background-color: #ed503f;
+    text-align: center;
+    color: #FFF;
+    font: 16px/31px "΢���ź�";
+    display: block !important;
+    float: left;
+    margin-left: 67px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.slider-btn {
+    position:absolute;
+    width:44px;
+    height:44px;
+    left:0;
+    top:-7px;
+    z-index:12;
+    cursor:pointer;
+    background-image:url(../images/1.png);
+    background-position:0 -84px;
+    transition:inherit;
+}
+.ver-tips {
+    position:absolute;
+    left:0;
+    bottom:-22px;
+    background:rgba(255,255,255,0.9);
+    height:22px;
+    line-height:22px;
+    font-size:12px;
+    width:100%;
+    margin:0;
+    text-align:left;
+    padding:0 8px;
+    transition:all 0.4s;
+}
+.slider-tips {
+    bottom:0;
+}
+.ver-tips i {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    vertical-align:top;
+    background-image: url(../images/1.png);
+    background-position: -4px -1229px;
+}
+.ver-tips span {
+    display:inline-block;
+    vertical-align:top;
+    line-height:22px;
+    color:#455;
+}
+.active-tips {
+    display:block;
+}
+
+.hidden {
+    display:none;
+}
+.re-btn {
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:28px;
+    padding:0 16px;
+}
+.re-btn a {
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin:7px 0;
+    background-image: url(../images/1.png);
+    background-position: 0 -1179px;
+    cursor:pointer;
+}
+.re-btn a:hover {
+    background-position: 0 -1193px;
+}

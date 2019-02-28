@@ -1,0 +1,797 @@
+body {
+    font-family: Microsoft Yahei,Tahoma,Helvetica,Arial,"\5B8B\4F53",sans-serif0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    background: #f8f8f8;
+}
+img{transition: all 0.5s;-moz-transition: all 0.5s;	/* Firefox 4 */-webkit-transition: all 0.5s;	/* Safari 和 Chrome */-o-transition: all 0.5s;	/* Opera */;}
+body,html{
+    scroll-behavior: smooth;
+}  
+div {
+    display: block;
+}
+.clr{
+    clear: both;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+/* header */
+.header{
+    background: #fff;
+    line-height: 46px;
+    height: 46px;
+}
+.fixheader{
+    position: fixed;
+    background: #fff;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+.header-top{
+    display: fixed;
+}
+.header .header-banner {
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+    background-color: gray;
+}
+.header .nav {
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    position: relative;
+    top: 5px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+#toptop{
+    width: 1163px;
+    margin: 0 auto;
+}
+.toplogo{
+    vertical-align: top;
+    padding-top: 7px;
+    float: left;
+    height: 35px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.toptop a{
+    text-decoration: none;
+    color: #333;
+    outline: none;   
+}
+.toptop a:hover{
+    color:red ;
+}
+.gameIcon{
+    widows: 60px;
+    height: 10px;
+    float: left;
+    margin-right: 20px;
+}
+.gameIcon span{
+    background: url(../image/game.png)no-repeat;
+    background-size: 18px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.rim{
+    float: left;
+    width: 80px;
+    height: 10px;
+    margin-right: 20px;
+}
+.rim span{
+    background: url(../image/shop.png)no-repeat;
+    background-size: 23px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.credit card{
+    float: left;
+    width: 60px;
+    height: 10px;
+}
+#credit-card{
+    background: url(../image/card.png)no-repeat;
+    background-size: 13px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.toptext{
+    display: block;
+    position: absolute;
+    height: 32px;
+    top: 7px;
+    left: 41%;
+    margin-left: -20px;
+    width: 370px;
+    float: left;
+}
+.toptext input{
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    padding: 8px 10px;
+    height: 32px;
+    line-height: 14px;
+    border-radius: 3px 0 0 3px;
+    width: 315px;
+    vertical-align: top;
+    color: #999;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20px;
+}
+#topsousuo{
+    float: left;
+    width: 30px;
+    height: 32px;
+    padding-top: 3px;
+    background-color:pink;
+}
+.topuser{
+    float: right;
+    width: 100px;
+    height: 10px;
+}
+.topuser span{
+    background: url(../image/topdeng.png)no-repeat;
+    background-size: 13px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+.topxz{
+    float: right;
+    width: 100px;
+    height: 10px;
+    margin-right: 40px;
+}
+.topxz span{
+    background: url(../image/topxz.png)no-repeat;
+    background-size: 13px;
+    padding-left: 25px;
+    background-position: 2px;
+}
+
+/* 头部图片层 */
+.header-banner img{
+    display: block;
+    height: 165px;
+    margin-top: 45px;
+    background-size: auto 100%;
+    z-index: 1;
+    width: 100%;
+}
+/* 导航栏 */
+#navnav{
+    width: 1190px;
+    height: 47px;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+#nav ul li{
+    float: left;
+    margin-right: 50px;
+    position: relative;
+    left: 70px;
+}
+#nav ul li img{
+    width: 40px;
+    height: 67px;
+    margin-top: -12px;
+    margin-left: 140px;
+    padding-bottom: 12px;
+}
+#nav ul li a{
+    display: block;
+    padding: 0 6px;
+    color: #333;
+    height: 46px;
+    width: 40px;
+    text-decoration: none;
+}
+#nav ul li a:hover{
+    color: pink;
+}
+#nav ul li a::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    border-bottom: 3px solid red;
+    transition: 0.2s all linear;
+}
+#nav ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+#nav ul li a ~ #nav ul li a::before{
+    left: 0;
+}
+#navul .active{
+    color: #fd4c5d;
+    border-bottom: 1px solid red;
+}
+
+/* 主体*/
+.zhuti{
+    width: 1163px;
+    margin: 0 auto;
+    margin-top: 225px;
+}
+.slider{
+    height: 270px;
+    margin-bottom: 50px;
+}
+/* 左半部分 */
+.slider-left{
+    width: 480px;
+    height: 270px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+/* 第一部分 左边轮播图 */
+.slider-left .pic li a img{
+    width: 480px;
+    height: 270px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.slider-left .pic li a{
+    display: inline-block;
+}
+.pic{ 
+    width: 500%;
+    z-index: 1;
+    position: relative;
+}
+.pic li{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    transition: all .3s;
+}
+
+
+/* 四个小点 */
+.trig{
+    position: absolute;
+    z-index: 3;
+    bottom: 6px;
+    right: 20px;
+}
+.trig span.on{
+    width: 18px;
+    height: 18px;
+    background: url(../image/anime-img/001.png)no-repeat;
+    display: inline-block;
+}
+.trig span{
+    background: url(../image/anime-img/002.png)no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+.trig span.come:hover{
+    background: url(../image/anime-img/003.png)no-repeat;
+}
+
+.slider-left a img{
+    width: 480px;
+    height: 270px;
+    border-radius: 5px;
+}
+/* 右半部分 */
+.slider-right{
+    width: 683px;
+    height: 270px;
+    float: left;
+}
+/* 六张gif */
+.slider-right ul li{
+    width: 225px;
+    height: 132px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px;
+}
+.slider-rightimg{
+    width: 200px;
+    height: 123px;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    bottom: 5px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.slider-rightimg img{
+    width: 200px;
+    height: 123px;
+    border-radius: 5px;
+    border: none;
+    transition: opacity .3s;
+}
+.slider-rightvideo a:hover img{
+    opacity: 0.5 !important;
+}
+.slider-rightvideo a:hover span{
+    color: #00b5e5;
+}
+
+.slider-righttitle{
+    position: absolute;
+    left: 0;
+    top: 73px;
+    width: 200px;
+    font-size: 12px;
+    height: 50px;
+    line-height: 20px;
+    padding: 10px 5px;
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9));
+}
+
+.slider-righttitle span{
+    color: #fff;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+.slider1{
+    height: 1700px;
+}
+/* 最近更新 */
+.near-updata{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+.headline-title{
+    padding: 0 0 20px;
+}
+.headline-title .name{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    float: left;
+    color: #222;
+}
+.headline-title .timeline-more{
+    float: right;
+    border: 1px solid #f25d8e;
+    width: 104px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    color: #f25d8e;
+    margin-right: 75px;
+}
+.headline-title .timeline-more:hover{
+    color: #fff;
+    background:#f25d8e;
+}
+/* 最近更新 */
+.headline-box{
+    height: 355px;
+}
+/* 里面的各个项 */
+.headline-box ul{
+    float:left;
+    height: 315px;
+    width:915px;
+    margin-top: 20px;
+}
+.timeline-item{
+    float: left;
+    width: auto;
+    padding-bottom: 36px;
+    padding-right: 55px;
+    zoom: 1;
+    font-size: 12px;
+}
+.timeline-item .timeline-link{
+    margin-right: 12px;
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.timeline-item .timeline-link,.timeline-item .timeline-link img{
+    width: 72px;
+    height: 72px;
+    border-radius: 4px;
+}
+.timeline-item-right{
+    float: left;
+    width: 96px;
+    height: 72px;
+    position: relative;
+}
+.timeline-item-right p.t{
+    height: 57px;
+    line-height: 18px;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    margin-top: -3px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.timeline-item-right p.t a span{
+    color: #222;
+}
+.timeline-item-right p.t a span:hover{
+    color: #00b5e5;
+}
+.timeline-item-right p.num{
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    margin-top: 2px;
+    color: #aaa;
+    left: 0;
+    white-space: nowrap;
+    line-height: 18px;
+}
+.timeline-item-right p.num a{
+    background: #ff8eb3;
+    border-radius: 9px;
+    vertical-align: top;
+    text-align: center;
+    padding: 0 4px;
+    height: 18px;
+    line-height: 18px;
+    min-width: 28px;
+    max-width: 80px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+    margin-left: 5px;
+}
+/* 右侧banner */
+.headline-box-rbanner{
+    height: 355px;
+    width: 246px;
+    overflow: hidden;
+    float: left;
+    position: relative;   
+    border-radius: 5px;
+}
+.headline-box-rbanner img{
+    position: absolute;
+    right: -115px;
+}
+
+/* 底部 */
+.headline-bottom{
+    width: 915px;
+    height: 20px;
+}
+
+/* tow 热播番剧 */
+.slider2{
+    width: 100%;
+    height: 200px;
+}
+.slider2-video{
+    width: 880px;
+    height: 155px;
+    overflow: hidden;
+    float: left;
+}
+.slider2-video ul{
+    display: flex
+}
+.video-bg{
+    width: 160px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 14px;
+    border-radius: 5px;
+    background: #333;
+}
+.video-bg a img{
+    width: 160px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    transition: opacity .3s;
+}
+.video-bg a span{
+    height: 40px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: #222;
+}
+.video-bg a:hover span{
+    color: #00b5e5;
+}
+.video-bg a:hover img{
+    opacity: 0.5 !important;
+}
+/* two右侧 */
+.slider2-right{
+    width: 282px;
+    height: 155px;
+    float: left;
+    overflow: hidden;
+    border-radius: 3px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+.slider2-right a{
+    font-size: 12px;
+    color: #333;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    background: #fff;
+    float: left;
+}
+.slider2-right a:hover{
+    color: #fff;
+    background:#f25d8e;
+}
+
+
+/* 连载动画 */
+.slider3{
+    width: 100%;
+    height: 540px;
+}
+.slider3-left{
+    width: 880px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+.slider3-right{
+    width: 283px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 左半部分 */
+.slider3-title{
+    width: 100%;
+    height: 44px;
+    padding: 0 0 20px;
+}
+.slider3-title h4{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 20px;
+    float: left;
+    color: #222;
+}
+.slider3-video{
+    width: 880px;
+    height: 496px;
+    overflow: hidden;
+    float: left;
+}
+.slider3-video ul li{
+    float: left;
+    margin-bottom: 55px;
+}
+.video-bg{
+    width: 160px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 14px;
+    border-radius: 5px;
+}
+.video-bg a img{
+    width: 160px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    transition: opacity .3s;
+}
+.video-bg a span{
+    height: 40px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: #222;
+}
+.video-bg a:hover span{
+    color: #00b5e5;
+}
+.video-bg a:hover img{
+    opacity: 0.5;
+}
+
+
+
+/* 右半部分 */
+.slider-right-title{
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.slider-right-title h3{
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+.list-wrap{
+    width: 100%;
+    height: 496px;
+    overflow: hidden;
+    zoom: 1;
+    transition: all .2s linear;
+}
+.list-wrap .rank-list{
+    padding-bottom: 15px;
+    min-height: 278px;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+.rank-list .rank-item{
+    position: relative;
+    padding-left: 25px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.rank-list .rank-item.first{
+    margin-top: 0;
+    margin-bottom: 15px;
+
+}
+.rank-list .rank-item .first-icon{
+    position: absolute;
+    color: #fff;
+    height: 18px;
+    line-height: 18px;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    min-width: 18px;
+    text-align: center;
+    background-color: #b8c0cc;
+    border-radius: 4px;
+    padding: 0 3px;
+    font-weight: bolder;
+    font-style: normal;
+    background: #f25d8e;
+}
+.rank-list .rank-item i{
+    position: absolute;
+    color: #fff;
+    height: 18px;
+    line-height: 18px;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    min-width: 18px;
+    text-align: center;
+    background-color: #b8c0cc;
+    border-radius: 4px;
+    padding: 0 3px;
+    font-weight: bolder;
+    font-style: normal;
+    background-color: #b8c0cc;
+
+}
+.rank-item .first-img{
+    margin-right: 5px;
+    width: 80px;
+    height: 50px;
+    float: left;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.rank-item .first-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rank-item .first-section{
+    float: left;
+}
+.first-section .first-title{
+    height: 36px;
+    line-height: 18px;
+    margin-top: -3px;
+    width: 150px;
+    padding: 0;
+    overflow: hidden;
+    color: #222;
+}
+.first-section .first-pingfen{
+    line-height: 12px;
+    color: #99a2aa;
+    height: 12px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.rank-item a:hover .first-title{
+    color: #00b5e5;
+    transition: 0.2s;
+}
+.first-section .p-title{
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+    color: #222;
+}
+.first-section .p-pingfen{
+    line-height: 12px;
+    color: #99a2aa;
+    height: 12px;
+    margin-top: 5px;
+    display: none;
+    overflow: hidden;
+}
+.rank-item a:hover .p-title{
+    color: #00b5e5;
+    transition: 0.2s;
+}
+
+/* banner1 */
+.banner1{
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+}
+.banner1 img{
+    width: 100%;
+    height: 125px;
+}
+
+
+/* 底部引入 */
+.iframe1{
+    width: 100%;
+    height: 250px;
+}

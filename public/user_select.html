@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> Boye </title>
+		<meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+		<meta charset="utf-8"/>
+		<style type="text/css">
+		</style>
+    </head>
+	
+  <body>
+		<table id='d1' border="1">
+			<tr>
+				<td>编号</td>
+				<td>用户名</td>
+				<td>用户密码</td>
+				<td>用户邮箱</td>
+				<td>用户昵称</td>
+				<td>操作</td>
+			</tr>
+		
+		</table>
+	</body>
+	<script>
+	window.onload=getUserlist()
+	function getUserlist(){
+		d1.innerHTML=''
+		var xhr=new XMLHttpRequest()
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4 && xhr.status==200){
+			var result=xhr.responseText
+			console.log(result);
+			var arr=JSON.parse(result)
+			for(var i=0;i<arr.length;i++){
+				d1.innerHTML+=`<tr><td>${arr[i].uid}</td><td>${arr[i].uname}</td><td>${arr[i].upwd}</td><td>${arr[i].email}</td>
+<td>${arr[i].user_name}</td><td><a href="update.html?uid=${arr[i].uid}">修改</a><a href="javascript:showdelete(${arr[i].uid})">删除</a></td></tr>`
+				}
+			}
+		}
+		xhr.open("get","/user/userlist",true)
+		xhr.send(null)
+	}
+	function showdelete(uid){
+		var xhr=new XMLHttpRequest()
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				var result=xhr.responseText
+				if(result==1){
+					alert('删除成功')
+					getUserlist()
+				}
+			}
+		}
+		xhr.open("get","/user/userdelete?uid="+uid,true)
+		xhr.send(null)
+	}
+	</script>
+</html>

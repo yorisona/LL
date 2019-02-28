@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>琉璃社区</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="css/DPlayer.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comment.css">
+</head>
+<body>
+    <header>
+        <iframe class="header_nav" src="./header.html" frameborder="0" scrolling="no">
+        </iframe>
+        <section>
+            <div class="main">
+                <div class="wrap">
+                    <div class="warp-left">
+                        <div class="player-wrap">
+                            <!-- <video src="./video-player/v1.mp4" controls="controls" muted></video> -->
+                            <!-- <iframe id="ifvideo" src="//player.bilibili.com/player.html?aid=43210213&cid=75756046&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe> -->
+                        </div>
+                        <div class="video-dan">                         
+                            <div id="Barrage" class="barrage">
+                                <div class="show"></div>                                                         
+                            </div>                            
+                                <div class="barrage" style="height:auto;">
+                                <input type="text" class="barrage-txt" placeholder="请输入弹幕内容">
+                                <input type="button" value="发布评论" class="barrage-send">
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h1 class="video-title" title="遇到喜欢女装的大佬应该以何种表情面对？">
+                                <!-- <span>遇到喜欢女装的大佬应该以何种表情面对？</span> -->
+                            </h1>
+                            <div class="video-data">
+                                <span title="总播放数46832" class="view">
+                                        4.7万播放  &nbsp; &nbsp;
+                                </span>
+                                <span title="总弹幕数96" class="view">
+                                        96弹幕   &nbsp; &nbsp;
+                                </span>
+                                <time>2018-12-18 20:26:00</time>
+                                <span class="video-path">
+                                    <a href="#">动画</a>
+                                    <i>></i>
+                                    <a href="#">短片·手书·配音</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="video-zang"></div>
+                        <div class="video-zuozhe">
+                            <div class="zuo-icon">
+                                <a href="#">
+                                    <img src="./image/sc01.gif" alt="" width="40px" height="40px">
+                                </a>
+                            </div>
+                            <div class="zuozhe-info">
+                                <div class="zuo-name">
+                                    <!-- <a href="#" class="username">
+                                        Lex
+                                    </a> -->
+                                </div>
+                            </div>
+                            <div class="zuo-btn">
+                                    <a class="zuo-btn1" href="javascript:;">充电</a>
+                                    <a id="guan" class="zuo-btn2" href="javascript:;">关注</a>
+                            </div>
+                        </div>
+                        <i class="clr"></i>
+                        <div class="video-abstract">
+                            <span  class="video-abstract-icon">未经作者授权，禁止转载</span>
+                            <div class="video-abstract-info">
+                                    这个时候是不是只要微笑就好了？
+                                    配音：小连杀、叮当、原子。
+                                    编剧：李喆
+                                    导演：成凡之
+                                    音乐：爱丽丝工坊
+                            </div>
+                        </div>
+                        <div class="label-warp">
+                            <ul class="tag-area">                                
+                                <li><a href="#">短片</a></li>
+                                <li><a href="#">女装</a></li>
+                                <li><a href="#">动画短片</a></li>
+                                <li><a href="#">嘤嘤怪</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-banner">
+                            <div class="commentAll">
+                                <!--评论区域 begin-->
+                                <div class="reviewArea clearfix">
+                                    <textarea class="content comment-input" placeholder="请自觉遵守互联网相关政策法规，严禁发布色情、暴力、反动言论" onkeyup="keyUP(this)"></textarea>
+                                    <a href="javascript:;" class="plBtn">评论</a>
+                                </div>
+                                <!--评论区域 end-->
+                                <!--回复区域 begin-->
+                                <div class="comment-show">
+                                    <div class="comment-show-con clearfix">
+                                        <div class="comment-show-con-img pull-left"><img src="images/header-img-comment_03.png" alt=""></div>
+                                        <div class="comment-show-con-list pull-left clearfix">
+                                            <div class="pl-text clearfix">
+                                                <a href="#" class="comment-size-name">lex : </a>
+                                                <span class="my-pl-con">&nbsp;来啊 造作啊!</span>
+                                            </div>
+                                            <div class="date-dz">
+                                                <span class="date-dz-left pull-left comment-time">2018-5-2 11:11:39</span>
+                                                <div class="date-dz-right pull-right comment-pl-block">
+                                                    <a href="javascript:;" class="removeBlock">删除</a>
+                                                    <a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left">回复</a>
+                                                    <span class="pull-left date-dz-line">|</span>
+                                                    <a href="javascript:;" class="date-dz-z pull-left"><i class="date-dz-z-click-red"></i>赞 (<i class="z-num">666</i>)</a>
+                                                </div>
+                                            </div>
+                                            <div class="hf-list-con"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--回复区域 end-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="warp-right">
+                        <div class="right-top">
+                            <img src="./image/gg03.jpg" alt="">
+                            <i class="close">X</i>
+                        </div>
+                        <div class="rigth-section">
+                            <div class="rec-title">      
+                                相关视频推荐
+                            </div>
+                            <div class="rec-list">
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a01" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">模仿小狐狸的 夏 色 祭</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">GundamMKK</a>
+                                        </div>
+                                        <div class="count">                                            
+                                            3.3万播放 · 20弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a02" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">【神楽めあ×湊あくあ】星间飞行【歌ってみた】</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">白羽千夜</a>
+                                        </div>
+                                        <div class="count">                                           
+                                            7235播放 · 62弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a03" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">二 般 发 情 夏 色 祭</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">冬場あかつき</a>
+                                        </div>
+                                        <div class="count">                                          
+                                            12.7万播放 · 599弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a04" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">【谢拉】用谢拉的声音调了首（喵）音乐，awsl</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">Wistrer</a>
+                                        </div>
+                                        <div class="count">                                          
+                                            8320播放 · 37弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a05" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">祭的无心告白</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">Remind丶FH</a>
+                                        </div>
+                                        <div class="count">                                           
+                                            7133播放 · 50弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a06" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">【中日字幕】鷹森ツヅル-推特弹唱片段</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">静の妍希Office</a>
+                                        </div>
+                                        <div class="count">                                        
+                                            2096播放 · 1弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a07" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">Kanna被射中了。。。</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">Kanna_VTuber官方频道</a>
+                                        </div>
+                                        <div class="count">                                          
+                                            4482播放 · 31弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="rec-item">
+                                    <div class="rec-video">
+                                        <a href="javascript:;">
+                                            <img src="./image/ll_video_list1/a08" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a class="title" href="javascript:;">【Party People】♡♡♡地叫出声的节奏游戏！</a>
+                                        <div class="count up">
+                                            <a href="javascript:;">田中姬铃木雏Official</a>
+                                        </div>
+                                        <div class="count">                                           
+                                            9637播放 · 145弹幕
+                                        </div>
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <script src="js/base.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery.flexText.js"></script>
+
+    <script>
+        $(".close").click(function(){
+            var $cls=$(this)
+            $(".right-top").slideUp()
+        })
+    </script>
+
+    <!-- <script>
+   var dp = new DPlayer({
+        element: document.getElementById('dplayer'),
+        video: {
+            url: 'https://www.bilibili.com/video/av41647330/',
+            pic: 'css/danmu.jpg'
+        },
+        danmaku: {
+            id: 'demo',
+            api: 'https://api.prprpr.me/dplayer/',
+            addition: ['https://api.prprpr.me/dplayer/bilibili?aid=15572523']
+        }
+    });
+    </script> -->
+    <script>
+         $(function(){		
+		$(".barrage-send").click(function(){
+		   var text=$(".barrage-txt").val();
+		   var div="<div>"+text+"</div>";
+		   var width = $(".barrage").width();
+		   var height = Math.floor(Math.random()*$(".barrage").height());
+		   $(".show").append(div);
+		   var length = $('.show div').length;
+		   $('.show div').eq(length-1).css({'top':height,'width':$('.show div').eq(length-1).width()});
+		   $('.show div').eq(length-1).animate({right:width},6000);
+		})
+	});
+    </script>
+    <script>
+        $("#guan").click(function(){
+            var $btn=$(this)            
+            $btn.toggleClass(".zuo-btn2 on")
+        })
+    </script>
+
+
+<script type="text/javascript">
+    $(function () {
+        $('.content').flexText();
+    });
+</script>
+<!--textarea限制字数-->
+<script type="text/javascript">
+    function keyUP(t){
+        var len = $(t).val().length;
+        if(len > 139){
+            $(t).val($(t).val().substring(0,140));
+        }
+    }
+</script>
+<!--点击评论创建评论条-->
+<script type="text/javascript">
+    $('.commentAll').on('click','.plBtn',function(){
+        var myDate = new Date();
+        //获取当前年
+        var year=myDate.getFullYear();
+        //获取当前月
+        var month=myDate.getMonth()+1;
+        //获取当前日
+        var date=myDate.getDate();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        if(m<10) m = '0' + m;
+        var s=myDate.getSeconds();
+        if(s<10) s = '0' + s;
+        var now=year+'-'+month+"-"+date+" "+h+':'+m+":"+s;
+        //获取输入内容
+        var oSize = $(this).siblings('.flex-text-wrap').find('.comment-input').val();
+        console.log(oSize);
+        //动态创建评论模块
+        oHtml = '<div class="comment-show-con clearfix"><div class="comment-show-con-img pull-left"><img src="images/header-img-comment_03.png" alt=""></div> <div class="comment-show-con-list pull-left clearfix"><div class="pl-text clearfix"> <a href="#" class="comment-size-name">David Beckham : </a> <span class="my-pl-con">&nbsp;'+ oSize +'</span> </div> <div class="date-dz"> <span class="date-dz-left pull-left comment-time">'+now+'</span> <div class="date-dz-right pull-right comment-pl-block"><a href="javascript:;" class="removeBlock">删除</a> <a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left">回复</a> <span class="pull-left date-dz-line">|</span> <a href="javascript:;" class="date-dz-z pull-left"><i class="date-dz-z-click-red"></i>赞 (<i class="z-num">666</i>)</a> </div> </div><div class="hf-list-con"></div></div> </div>';
+        if(oSize.replace(/(^\s*)|(\s*$)/g, "") != ''){
+            $(this).parents('.reviewArea ').siblings('.comment-show').prepend(oHtml);
+            $(this).siblings('.flex-text-wrap').find('.comment-input').prop('value','').siblings('pre').find('span').text('');
+        }
+    });
+</script>
+<!--点击回复动态创建回复块-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.pl-hf',function(){
+        //获取回复人的名字
+        var fhName = $(this).parents('.date-dz-right').parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+        //回复@
+        var fhN = '回复@'+fhName;
+        //var oInput = $(this).parents('.date-dz-right').parents('.date-dz').siblings('.hf-con');
+        var fhHtml = '<div class="hf-con pull-left"> <textarea class="content comment-input hf-input" placeholder="" onkeyup="keyUP(this)"></textarea> <a href="javascript:;" class="hf-pl">评论</a></div>';
+        //显示回复
+        if($(this).is('.hf-con-block')){
+            $(this).parents('.date-dz-right').parents('.date-dz').append(fhHtml);
+            $(this).removeClass('hf-con-block');
+            $('.content').flexText();
+            $(this).parents('.date-dz-right').siblings('.hf-con').find('.pre').css('padding','6px 15px');
+            //console.log($(this).parents('.date-dz-right').siblings('.hf-con').find('.pre'))
+            //input框自动聚焦
+            $(this).parents('.date-dz-right').siblings('.hf-con').find('.hf-input').val('').focus().val(fhN);
+        }else {
+            $(this).addClass('hf-con-block');
+            $(this).parents('.date-dz-right').siblings('.hf-con').remove();
+        }
+    });
+</script>
+<!--评论回复块创建-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.hf-pl',function(){
+        var oThis = $(this);
+        var myDate = new Date();
+        //获取当前年
+        var year=myDate.getFullYear();
+        //获取当前月
+        var month=myDate.getMonth()+1;
+        //获取当前日
+        var date=myDate.getDate();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        if(m<10) m = '0' + m;
+        var s=myDate.getSeconds();
+        if(s<10) s = '0' + s;
+        var now=year+'-'+month+"-"+date+" "+h+':'+m+":"+s;
+        //获取输入内容
+        var oHfVal = $(this).siblings('.flex-text-wrap').find('.hf-input').val();
+        console.log(oHfVal)
+        var oHfName = $(this).parents('.hf-con').parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+        var oAllVal = '回复@'+oHfName;
+        if(oHfVal.replace(/^ +| +$/g,'') == '' || oHfVal == oAllVal){
+
+        }else {
+            $.getJSON("json/pl.json",function(data){
+                var oAt = '';
+                var oHf = '';
+                $.each(data,function(n,v){
+                    delete v.hfContent;
+                    delete v.atName;
+                    var arr;
+                    var ohfNameArr;
+                    if(oHfVal.indexOf("@") == -1){
+                        data['atName'] = '';
+                        data['hfContent'] = oHfVal;
+                    }else {
+                        arr = oHfVal.split(':');
+                        ohfNameArr = arr[0].split('@');
+                        data['hfContent'] = arr[1];
+                        data['atName'] = ohfNameArr[1];
+                    }
+
+                    if(data.atName == ''){
+                        oAt = data.hfContent;
+                    }else {
+                        oAt = '回复<a href="#" class="atName">@'+data.atName+'</a> : '+data.hfContent;
+                    }
+                    oHf = data.hfName;
+                });
+
+                var oHtml = '<div class="all-pl-con"><div class="pl-text hfpl-text clearfix"><a href="#" class="comment-size-name">我的名字 : </a><span class="my-pl-con">'+oAt+'</span></div><div class="date-dz"> <span class="date-dz-left pull-left comment-time">'+now+'</span> <div class="date-dz-right pull-right comment-pl-block"> <a href="javascript:;" class="removeBlock">删除</a> <a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left">回复</a> <span class="pull-left date-dz-line">|</span> <a href="javascript:;" class="date-dz-z pull-left"><i class="date-dz-z-click-red"></i>赞 (<i class="z-num">666</i>)</a> </div> </div></div>';
+                oThis.parents('.hf-con').parents('.comment-show-con-list').find('.hf-list-con').css('display','block').prepend(oHtml) && oThis.parents('.hf-con').siblings('.date-dz-right').find('.pl-hf').addClass('hf-con-block') && oThis.parents('.hf-con').remove();
+            });
+        }
+    });
+</script>
+<!--删除评论块-->
+<script type="text/javascript">
+    $('.commentAll').on('click','.removeBlock',function(){
+        var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');
+        if(oT.siblings('.all-pl-con').length >= 1){
+            oT.remove();
+        }else {
+            $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con').parents('.hf-list-con').css('display','none')
+            oT.remove();
+        }
+        $(this).parents('.date-dz-right').parents('.date-dz').parents('.comment-show-con-list').parents('.comment-show-con').remove();
+
+    })
+</script>
+<!--点赞-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.date-dz-z',function(){
+        var zNum = $(this).find('.z-num').html();
+        if($(this).is('.date-dz-z-click')){
+            zNum--;
+            $(this).removeClass('date-dz-z-click red');
+            $(this).find('.z-num').html(zNum);
+            $(this).find('.date-dz-z-click-red').removeClass('red');
+        }else {
+            zNum++;
+            $(this).addClass('date-dz-z-click');
+            $(this).find('.z-num').html(zNum);
+            $(this).find('.date-dz-z-click-red').addClass('red');
+        }
+    })
+</script>
+</body>
+</html>

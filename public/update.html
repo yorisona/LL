@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> Boye </title>
+		<meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+		<meta charset="utf-8"/>
+		<style type="text/css">
+		</style>
+    </head>
+	
+  <body onload="cha()">
+		<form action="/user/xiugai" method="post">
+			<input type="text" hidden id="id" name="uid" />
+			用户名称：<input type="text" id="uname" name="uname"/><br />
+			用户密码：<input type="text" id="upwd" name="upwd" /><br />
+			用户邮箱：<input type="text" id="email" name="email" /><br />
+			用户昵称：<input type="text" id="user_name" name="user_name" /><br />
+			<input type="submit" value="修改" />	
+		</form>
+	</body>
+	<script>
+			var urlParams=new URLSearchParams(location.search)
+			var uid=urlParams.get("uid")
+			id.value=uid
+		function cha(){
+			var urlParams=new URLSearchParams(location.search)
+			var uid=urlParams.get("uid")
+			var xhr=new XMLHttpRequest()
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					var result=xhr.responseText
+					var user=JSON.parse(result)
+					uid.value=user.uid
+					uname.value=user.uname
+					upwd.value=user.upwd
+					email.value=user.email
+					user_name.value=user.user_name
+					
+				}
+			}
+			xhr.open("get","/user/chaxun?uid="+uid,true)
+			xhr.send(null)
+		}
+	</script>
+</html>

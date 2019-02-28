@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sm img{
+            width: 80px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <img src="./image/anime-img/02.jpg" alt="2">
+    </div>
+    <div class="sm">
+        <img data-target="./image/anime-img/02.jpg" src="./image/anime-img/02.jpg" alt="2">
+        <img data-target="./image/anime-img/03.jpg" src="./image/anime-img/03.jpg" alt="3">
+        <img data-target="./image/anime-img/04.jpg" src="./image/anime-img/04.jpg" alt="4">
+    </div>
+    <script>
+        var i=2
+        var imgs=document.querySelectorAll(".sm>img")
+        var bigimg=document.querySelector(".big>img")
+        function show(){         
+            //console.log(imgs)         
+            if(i<4){
+                i++
+            }else{
+                i=2
+            }
+            bigimg.setAttribute("src",`./image/anime-img/0${i}.jpg`)
+            console.log(i)
+        }
+        var n=setInterval(show,1000)
+        for(var img of imgs){
+            console.log(img)
+            img.onclick=function(){
+                alert(213)
+            }
+        }
+    </script>
+</body>
+</html>

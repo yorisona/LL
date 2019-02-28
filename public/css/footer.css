@@ -1,0 +1,91 @@
+body {
+    font-family: "AcFun Symbol","Helvetica Neue",Helvetica,Arial,"pingfang SC","Microsoft Yahei",STHeiti,sans-serif;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    background: #f8f8f8;
+}
+
+body,html{
+    scroll-behavior: smooth;
+}  
+div {
+    display: block;
+}
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+/* 页码 */
+.foot{
+    height: 250px;
+    background: #ececec;
+}
+/* 底部主体 */
+.footmain{
+    width: 1180px;
+    margin: 0 auto;
+    height: 250px;
+}
+/* 底部nav */
+.foot-nav{
+    height: 80px;
+    padding-top: 10px;
+}
+.foot-nav-top{
+    width: 225px;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;   
+}
+.foot-nav-top a{
+    color: #333;
+    margin-right: 24px;
+    display: inline-block;
+    padding: 3px;
+}
+.foot-nav-top img{
+    width: 90px;
+    height: 65px;
+    margin-top: 6px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}
+/* 底部main */
+.foot-main{
+    height: 120px;
+}
+.foot-section{
+    width: 225px;
+    height: 120px;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+}
+.foot-section a, .foot-section h4{
+    color: #999;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 3px;
+}
+/* 底部的底部 */
+.footfooter{
+    height: 50px;
+}
+.footfooter div{
+    margin-left: 485px;
+    padding-top: 15px;
+}
+.footer {
+    padding: 20px 0;
+    background-color: #ececec;
+    font-size: 12px;
+    width: 100%;
+    height: 280px;
+}
